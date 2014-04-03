@@ -34,6 +34,9 @@ cumulativeVehicle = 0;
 for i=2:length(time)-1
 	for j=1:length(flowProfiles)
 		numVehicles = flowProfiles{j}.profile(i)*timeStep/3600;
+		if numVehicles < 0
+			continue
+		end
 		cumulativeVehicle = cumulativeVehicle + mod(numVehicles,1);
 		numVehicles = floor(numVehicles);
 		flowID = [flowProfiles{j}.fromEdge num2str(i-1)];
@@ -71,4 +74,4 @@ end
 fprintf(fileID,'\t</interval>\n</turns>');
 fclose(fileID);
 
-system(['jtrrouter --net-file ' netFile ' --flow-files ' flowsFile ' --turn-ratio-files ' turnsFile ' --output-file ' routesFile ' --ignore-errors']);
+system(['jtrrouter --net-file ' netFile ' --flow-files ' flowsFile ' --turn-ratio-files ' turnsFile ' --output-file ' routesFile ' --ignore-errors' ' --departlane free']);
