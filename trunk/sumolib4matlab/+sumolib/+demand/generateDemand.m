@@ -39,15 +39,15 @@ for i=2:length(time)-1
 		end
 		cumulativeVehicle = cumulativeVehicle + mod(numVehicles,1);
 		numVehicles = floor(numVehicles);
-		flowID = [flowProfiles{j}.fromEdge num2str(i-1)];
+		flowID = [flowProfiles{j}.fromEdge num2str(i-1) '_' num2str(flowProfiles{j}.fromLane)];
 		if cumulativeVehicle >= 1
-			fprintf(fileID,'\t<flow id="%s" from="%s" begin="%d" end="%d" number="%d"/>\n',...
-				flowID,flowProfiles{j}.fromEdge,time(i-1),time(i),numVehicles + 1);
+			fprintf(fileID,'\t<flow id="%s" from="%s" begin="%d" end="%d" number="%d" departLane="%d"/>\n',...
+				flowID,flowProfiles{j}.fromEdge,time(i-1),time(i),numVehicles + 1,flowProfiles{j}.fromLane);
 			cumulativeVehicle = cumulativeVehicle - 1;
 		else
 			if numVehicles > 0
-				fprintf(fileID,'\t<flow id="%s" from="%s" begin="%d" end="%d" number="%d"/>\n',...
-					flowID,flowProfiles{j}.fromEdge,time(i-1),time(i),numVehicles);
+				fprintf(fileID,'\t<flow id="%s" from="%s" begin="%d" end="%d" number="%d" departLane="%d"/>\n',...
+					flowID,flowProfiles{j}.fromEdge,time(i-1),time(i),numVehicles,flowProfiles{j}.fromLane);
 			end
 		end
 	end
@@ -56,7 +56,7 @@ fprintf(fileID,'</flows>');
 fclose(fileID);
 
 
-% Turning rations generation
+% Turning ratios generation
 
 fileID = fopen(turnsFile,'w');
 fprintf(fileID,'<turns>\n\t<interval begin="%s" end="%s">\n',num2str(beginTime), num2str(endTime));
