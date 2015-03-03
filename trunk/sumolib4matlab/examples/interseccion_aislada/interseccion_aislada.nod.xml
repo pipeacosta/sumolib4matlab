@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nodes version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/nodes_file.xsd">
+    <node id="O1" x="0" y="452" type="dead_end"/>
+    <node id="O2" x="-452" y="0" type="dead_end"/>
+    <node id="O3" x="452" y="0" type="dead_end"/>
+    <node id="O4" x="0" y="-452" type="dead_end"/>
+    <node id="a" x="0" y="0" type="traffic_light" tl="a"/>
+</nodes>
