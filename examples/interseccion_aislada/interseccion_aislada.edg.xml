@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/edges_file.xsd">
+    <edge id="O1a" from="O1" to="a" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="O2a" from="O2" to="a" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="O3a" from="O3" to="a" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="O4a" from="O4" to="a" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="aO1" from="a" to="O1" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="aO2" from="a" to="O2" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="aO3" from="a" to="O3" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+    <edge id="aO4" from="a" to="O4" priority="1" type="calleTipo1" numLanes="3" speed="50.00"/>
+</edges>

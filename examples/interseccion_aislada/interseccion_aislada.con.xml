@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/connections_file.xsd">
+    <connection from="O1a" to="aO2" fromLane="0" toLane="0"/>
+    <connection from="O1a" to="aO4" fromLane="1" toLane="1"/>
+    <connection from="O1a" to="aO3" fromLane="2" toLane="2"/>
+
+    <connection from="O2a" to="aO4" fromLane="0" toLane="0"/>
+    <connection from="O2a" to="aO3" fromLane="1" toLane="1"/>
+    <connection from="O2a" to="aO1" fromLane="2" toLane="2"/>
+
+    <connection from="O3a" to="aO1" fromLane="0" toLane="0"/>
+    <connection from="O3a" to="aO2" fromLane="1" toLane="1"/>
+    <connection from="O3a" to="aO4" fromLane="2" toLane="2"/>
+
+    <connection from="O4a" to="aO3" fromLane="0" toLane="0"/>
+    <connection from="O4a" to="aO1" fromLane="1" toLane="1"/>
+    <connection from="O4a" to="aO2" fromLane="2" toLane="2"/>
+
+</connections>

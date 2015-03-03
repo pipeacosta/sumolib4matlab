@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/30/13 19:46:23 by SUMO netconvert Version dev-SVN-rUNKNOWN
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="interseccion_aislada.nod.xml"/>
+        <edge-files value="interseccion_aislada.edg.xml"/>
+        <connection-files value="interseccion_aislada.con.xml"/>
+        <type-files value="interseccion_aislada.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="interseccion_aislada.net.xml"/>
+        <plain-output-prefix value="interseccion_aislada"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<tlLogics version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/tllogic_file.xsd">
+    <tlLogic id="a" type="static" programID="0" offset="0">
+        <phase duration="31" state="GGgGrrGGgGrr"/>
+        <phase duration="16" state="yygyrryygyrr"/>
+        <phase duration="6" state="rrGrrrrrGrrr"/>
+        <phase duration="16" state="rryrrrrryrrr"/>
+        <phase duration="31" state="GrrGGgGrrGGg"/>
+        <phase duration="16" state="yrryygyrryyg"/>
+        <phase duration="6" state="rrrrrGrrrrrG"/>
+        <phase duration="16" state="rrrrryrrrrry"/>
+    </tlLogic>
+
+    <connection from="O1a" to="aO2" fromLane="0" toLane="0" tl="a" linkIndex="0"/>
+    <connection from="O1a" to="aO4" fromLane="1" toLane="1" tl="a" linkIndex="1"/>
+    <connection from="O1a" to="aO3" fromLane="2" toLane="2" tl="a" linkIndex="2"/>
+    <connection from="O2a" to="aO4" fromLane="0" toLane="0" tl="a" linkIndex="9"/>
+    <connection from="O2a" to="aO3" fromLane="1" toLane="1" tl="a" linkIndex="10"/>
+    <connection from="O2a" to="aO1" fromLane="2" toLane="2" tl="a" linkIndex="11"/>
+    <connection from="O3a" to="aO1" fromLane="0" toLane="0" tl="a" linkIndex="3"/>
+    <connection from="O3a" to="aO2" fromLane="1" toLane="1" tl="a" linkIndex="4"/>
+    <connection from="O3a" to="aO4" fromLane="2" toLane="2" tl="a" linkIndex="5"/>
+    <connection from="O4a" to="aO3" fromLane="0" toLane="0" tl="a" linkIndex="6"/>
+    <connection from="O4a" to="aO1" fromLane="1" toLane="1" tl="a" linkIndex="7"/>
+    <connection from="O4a" to="aO2" fromLane="2" toLane="2" tl="a" linkIndex="8"/>
+</tlLogics>
