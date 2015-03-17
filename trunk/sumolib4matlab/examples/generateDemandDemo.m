@@ -3,24 +3,17 @@ close all
 clc
 
 flowProfile1_0 = sumolib.demand.FlowProfile('O1a',0,round(120*rand(1,30)),...
-	containers.Map({'aO2','aO3','aO4'},{0.1,0.3,0.6}));
+	containers.Map({'aO2'},{1}));
 flowProfile1_1 = sumolib.demand.FlowProfile('O1a',1,round(120*rand(1,30)),...
-	containers.Map({'aO2','aO3','aO4'},{0.1,0.3,0.6}));
+	containers.Map({'aO4'},{1}));
 flowProfile1_2 = sumolib.demand.FlowProfile('O1a',2,round(120*rand(1,30)),...
-	containers.Map({'aO2','aO3','aO4'},{0.1,0.3,0.6}));
+	containers.Map({'aO3'},{1}));
 
-flowProfile2_0 = sumolib.demand.FlowProfile('O4a',0,round(120*sin(rand(1,30))),...
-	containers.Map({'aO2','aO3','aO1'},{0.1,0.3,0.6}));
-flowProfile2_1 = sumolib.demand.FlowProfile('O4a',1,round(120*sin(rand(1,30))),...
-	containers.Map({'aO2','aO3','aO1'},{0.1,0.3,0.6}));
-flowProfile2_2 = sumolib.demand.FlowProfile('O4a',2,round(120*sin(rand(1,30))),...
-	containers.Map({'aO2','aO3','aO1'},{0.1,0.3,0.6}));
-
-flowProfiles = {flowProfile1_0,flowProfile1_1,flowProfile1_2,flowProfile2_0,...
-    flowProfile2_1,flowProfile2_2};
+flowProfiles = {flowProfile1_0,flowProfile1_1,flowProfile1_2};
 
 [scenarioPath,~,~] = fileparts(which(mfilename));
 scenarioPath = [scenarioPath '\interseccion_aislada'];
-sumolib.demand.generateDemand([scenarioPath '\interseccion_aislada.net.xml'],...
-	flowProfiles, 0, 12*3600, [scenarioPath '\generateDemandDemo'])
+cd(scenarioPath);
+sumolib.demand.generateDemand('interseccion_aislada.net.xml',...
+	flowProfiles, 0, 12*3600, 'generateDemandDemo');
 
