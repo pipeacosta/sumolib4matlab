@@ -1,0 +1,203 @@
+<connections>
+<!-- Cambios inter a -->
+
+  <!--  <delete from="35084188#0" to="33358628#1" fromLane="3" toLane="2"/>
+   <delete from="35084188#0" to="142506452#2" fromLane="3" toLane="0"/>
+   <delete from="35084188#0" to="35084188#0" fromLane="0" toLane="0"/>
+   <delete from="30614094" to="-142506452#0" fromLane="2" toLane="0"/>
+   <delete from="142506452#0" to="44851260" fromLane="0" toLane="3"/>
+   <delete from="142506452#0" to="44851260" fromLane="0" toLane="2"/>
+   <delete from="142506452#0" to="44851260" fromLane="0" toLane="1"/>
+   <delete from="142506452#0" to="44851260" fromLane="0" toLane="0"/>
+   <delete from="98733428" to="-142506452#0" fromLane="2" toLane="0"/>   
+   <delete from="35084188#0" to="-142506452#0" fromLane="0" toLane="0"/>
+   <delete from="98733428" to="142506452#2" fromLane="2" toLane="0"/>
+   <delete from="-142506452#2" to="44851260" fromLane="0" toLane="2"/>
+   <delete from="-142506452#2" to="44851260" fromLane="0" toLane="1"/>
+   <delete from="-142506452#2" to="44851260" fromLane="0" toLane="3"/>
+   <delete from="30614094" to="44851260" fromLane="2" toLane="2"/>
+   <delete from="30614094" to="44851260" fromLane="3" toLane="3"/>
+   <delete from="30614094" to="44851260" fromLane="2" toLane="1"/>
+   <delete from="98733428" to="44851260" fromLane="2" toLane="3"/>   
+   <connection from="35084188#0" to="44851260" fromLane="3" toLane="3"/>
+   <connection from="98733428" to="35084196" fromLane="1" toLane="1"/>
+   <connection from="98733428" to="35084196" fromLane="0" toLane="0"/>    
+   <delete from="142506452#0" to="33358628#1" fromLane="0" toLane="2"/>
+   <delete from="-142506452#2" to="33358628#1" fromLane="0" toLane="0"/>
+   <delete from="-142506452#2" to="33358628#1" fromLane="0" toLane="1"/>
+   <delete from="-142506452#2" to="33358628#1" fromLane="0" toLane="2"/>
+   <delete from="30614094" to="142506452#2" fromLane="0" toLane="0"/>
+   <connection from="35084188#0" to="44851260" fromLane="0" toLane="0"/>   
+   <connection from="35084188#0" to="44851260" fromLane="1" toLane="1"/>   
+   <connection from="30614094" to="33358628#1" fromLane="3" toLane="2"/>  -->  
+   
+   
+<!-- cambios inter b -->
+       
+   <!-- <connection from="230672291#0" to="230672291#2" fromLane="0" toLane="0"/>   
+   
+   <delete from="230672291#0" to="142506452#3" fromLane="1" toLane="0"/> 
+   <delete from="230672291#0" to="-142506452#2" fromLane="0" toLane="0"/>
+   <delete from="142506452#3" to="98778193" fromLane="0" toLane="2"/>  
+   <delete from="142506452#3" to="230672291#2" fromLane="0" toLane="1"/>  
+   <delete from="142506452#3" to="230672291#2" fromLane="0" toLane="0"/>
+   <delete from="-142506452#4" to="98778193" fromLane="0" toLane="1"/> 
+   <delete from="-142506452#4" to="98778193" fromLane="0" toLane="2"/>    
+   <delete from="-142506452#3" to="98778193" fromLane="0" toLane="2"/>    
+   <delete from="-142506452#3" to="98778193" fromLane="0" toLane="1"/>
+   <delete from="142506452#2" to="98778193" fromLane="0" toLane="2"/>
+   <delete from="142506452#2" to="98778193" fromLane="0" toLane="1"/>
+   <delete from="142506452#2" to="230672291#2" fromLane="0" toLane="1"/>
+   <delete from="-142506452#3" to="98778193" fromLane="0" toLane="0"/> 
+   <delete from="142506452#2" to="230672291#2" fromLane="0" toLane="0"/>
+   <delete from="-142506452#3" to="230672291#2" fromLane="0" toLane="1"/>
+   
+   <connection from="230672291#0" to="230672291#2" fromLane="0" toLane="0"/>
+   <connection from="230672291#0" to="230672291#2" fromLane="1" toLane="1"/>-->
+   
+<!--  cambios inter c --> 
+
+   <!--  <delete from="142506452#3" to="30175679#2" fromLane="0" toLane="1"/>
+	<delete from="98778193" to="-142506452#3" fromLane="2" toLane="0"/>
+	<delete from="98778193" to="142506452#4" fromLane="2" toLane="0"/>
+	<delete from="30175679#0" to="142506452#4" fromLane="1" toLane="0"/>
+	<delete from="-142506452#4" to="30175679#2" fromLane="0" toLane="0"/> 
+    
+   <connection from="30175679#0" to="30175679#2" fromLane="0" toLane="0"/> -->
+  
+<!-- cambios inter d -->
+			
+	<!-- <delete from="142506452#4" to="32120934#1" fromLane="0" toLane="2"/> 
+	<delete from="142506452#4" to="32120934#1" fromLane="0" toLane="1"/> 
+	<delete from="142506452#4" to="-142708704" fromLane="0" toLane="0"/> 
+	<delete from="-142506452#5" to="-142708704" fromLane="0" toLane="0"/>
+	<delete from="37017722#0" to="-142506452#4" fromLane="0" toLane="0"/>
+	<delete from="37017722#0" to="142506452#5" fromLane="2" toLane="0"/>
+	<delete from="-142506452#5" to="32120934#1" fromLane="0" toLane="2"/>
+	<delete from="-142506452#5" to="32120934#1" fromLane="0" toLane="1"/>
+	<delete from="-142506452#5" to="32120934#1" fromLane="0" toLane="0"/> 
+	<delete from="142708704" to="-142708704" fromLane="0" toLane="0"/> -->
+	
+<!-- Cambios inter e  -->
+      
+ <!--  <delete from="32120934#1" to="-142506452#5" fromLane="2" toLane="0"/> 
+  <delete from="99868926" to="-142506452#5" fromLane="0" toLane="0"/> 
+  <delete from="99868926" to="-1597#1" fromLane="2" toLane="2"/> 
+  <delete from="99868926" to="142506452#7" fromLane="2" toLane="0"/> 
+  <delete from="99868926" to="-1597#1" fromLane="2" toLane="1"/> 
+  <delete from="99868926" to="-1601#0" fromLane="2" toLane="1"/> 
+  <delete from="99868926" to="-142506452#5" fromLane="2" toLane="0"/>    
+  <delete from="80784950" to="-142506452#5" fromLane="2" toLane="0"/> 
+  <delete from="142506452#5" to="-1601#0" fromLane="0" toLane="1"/> 
+  <delete from="142506452#5" to="-1599#1" fromLane="0" toLane="2"/> 
+  <delete from="142506452#5" to="-1599#1" fromLane="0" toLane="1"/> 
+  <delete from="32120934#1" to="-1599#1" fromLane="2" toLane="2"/> 
+  <delete from="32120934#1" to="-1599#1" fromLane="2" toLane="1"/> 
+  <delete from="32120934#1" to="-1599#1" fromLane="2" toLane="0"/>   
+  <delete from="32120934#1" to="-1597#1" fromLane="2" toLane="2"/> 
+  <delete from="32120934#1" to="-1597#1" fromLane="2" toLane="1"/> 
+  <delete from="32120934#1" to="-1597#1" fromLane="2" toLane="0"/> 
+  <delete from="142506452#5" to="-1597#1" fromLane="0" toLane="2"/> 
+  <delete from="142506452#5" to="-1597#1" fromLane="0" toLane="1"/> 
+  <delete from="142506452#5" to="-1597#1" fromLane="0" toLane="0"/>   
+  <delete from="99868926" to="-1597#1" fromLane="2" toLane="0"/> 
+  <delete from="80784950" to="-1599#1" fromLane="2" toLane="1"/> 
+  <delete from="80784950" to="-1599#1" fromLane="2" toLane="2"/> 
+  <delete from="-142506452#7" to="-1597#1" fromLane="0" toLane="0"/>
+  <delete from="-142506452#7" to="-1597#1" fromLane="0" toLane="1"/>
+  <delete from="-142506452#7" to="-1597#1" fromLane="0" toLane="2"/>
+  <delete from="-142506452#7" to="-1599#1" fromLane="0" toLane="1"/>
+  <delete from="-142506452#7" to="-1599#1" fromLane="0" toLane="2"/>
+  <delete from="80784950" to="142506452#7" fromLane="0" toLane="0"/>
+  <delete from="-142506452#7" to="-1601#0" fromLane="0" toLane="1"/>
+  <delete from="-142506452#7" to="-1601#0" fromLane="0" toLane="0"/>  
+  <delete from="80784950" to="-1601#0" fromLane="2" toLane="1"/>
+  <connection from="80784950" to="-1601#0" fromLane="1" toLane="1"/>
+  <delete from="32120934#1" to="142506452#7" fromLane="2" toLane="0"/>
+  <connection from="32120934#1" to="-1601#0" fromLane="2" toLane="1"/>
+  <connection from="99868926" to="-1599#1" fromLane="2" toLane="2"/>  
+  <connection from="99868926" to="-1599#1" fromLane="0" toLane="0"/>
+  <connection from="99868926" to="-1599#1" fromLane="1" toLane="1"/>
+  <connection from="32120934#1" to="-1601#0" fromLane="0" toLane="0"/>-->
+  
+   
+   
+<!--    cambios inter f -->
+   
+  <!--  <delete from="-1601#0" to="32121012#3" fromLane="1" toLane="1"/> 
+   <delete from="142506452#7" to="-1595#2" fromLane="0" toLane="1"/>  
+   <delete from="142506452#7" to="-142506452#7" fromLane="2" toLane="0"/> 
+   <delete from="-1601#0" to="-142506452#7" fromLane="1" toLane="0"/> 
+   <delete from="142506452#7" to="32121012#3" fromLane="0" toLane="1"/> 
+   <delete from="142548929" to="142506452#8" fromLane="0" toLane="0"/>
+   <delete from="-1601#0" to="142506452#8" fromLane="1" toLane="0"/>
+   <delete from="-1601#0" to="-1595#2" fromLane="1" toLane="1"/>
+   <delete from="142548929" to="-142506452#7" fromLane="2" toLane="0"/>
+   <delete from="-142506452#8" to="32121012#3" fromLane="0" toLane="0"/>
+   <delete from="-142506452#8" to="32121012#3" fromLane="0" toLane="1"/> 
+  
+   <connection from="-1601#0" to="-1601#1" fromLane="1" toLane="1"/>
+   <connection from="-1601#0" to="-1601#1" fromLane="0" toLane="0"/> 
+   <delete from="-142506452#8" to="-1595#2" fromLane="0" toLane="1"/>
+   <delete from="-142506452#8" to="-1595#2" fromLane="0" toLane="0"/>
+   
+   <connection from="142548929" to="-1595#2" fromLane="2" toLane="1"/> 
+   <connection from="142548929" to="-1595#2" fromLane="0" toLane="0"/> 
+   <connection from="142548929" to="32121012#3" fromLane="2" toLane="0"/> 
+   <connection from="32121012#2" to="32121012#3" fromLane="1" toLane="1"/> 
+   <connection from="32121012#2" to="32121012#3" fromLane="0" toLane="0"/> -->
+   
+<!-- Cambios inter g --> 
+
+  <!-- <delete from="32121227" to="142506452#10" fromLane="0" toLane="0"/>
+  <delete from="-1601#1" to="142506452#10" fromLane="1" toLane="0"/>
+  <delete from="32121012#0" to="32121007" fromLane="1" toLane="1"/> 
+  <delete from="32121012#0" to="142506452#10" fromLane="1" toLane="0"/> 
+  <delete from="32121012#0" to="32121007" fromLane="0" toLane="1"/> 
+  <delete from="32121012#0" to="32121007" fromLane="0" toLane="0"/> 
+  <delete from="32237371" to="-142506452#8" fromLane="0" toLane="0"/>
+  <delete from="32121012#0" to="-142506452#8" fromLane="1" toLane="0"/>  
+  <delete from="142506452#8" to="32121012#2" fromLane="0" toLane="0"/>   
+  <delete from="142506452#8" to="32121012#2" fromLane="0" toLane="1"/>  
+  <delete from="-1601#1" to="-142506452#8" fromLane="1" toLane="0"/> 
+  <delete from="-1601#1" to="32121012#2" fromLane="1" toLane="1"/> 
+  <delete from="142506452#8" to="32121244#2" fromLane="0" toLane="2"/>
+  <delete from="142506452#8" to="32121244#2" fromLane="0" toLane="1"/>
+  <delete from="142506452#8" to="32121244#2" fromLane="0" toLane="0"/>
+  <delete from="32121227" to="-142506452#8" fromLane="1" toLane="0"/>
+  <delete from="142506452#8" to="32121007" fromLane="0" toLane="1"/>
+  <delete from="-142506452#10" to="32121007" fromLane="0" toLane="1"/>
+  <delete from="-142506452#10" to="32121007" fromLane="0" toLane="0"/>
+  <delete from="-142506452#10" to="32237446#2" fromLane="0" toLane="0"/>
+  <delete from="-142506452#10" to="32237446#2" fromLane="0" toLane="1"/>
+  <delete from="-142506452#10" to="32237446#2" fromLane="0" toLane="2"/>
+  <delete from="32121012#0" to="32121244#2" fromLane="1" toLane="0"/>
+  <delete from="32121012#0" to="32121244#2" fromLane="1" toLane="1"/>
+  <delete from="32121012#0" to="32121244#2" fromLane="1" toLane="2"/>
+  <delete from="32121012#0" to="32121244#2" fromLane="1" toLane="0"/>
+  <delete from="-142506452#10" to="32121012#2" fromLane="0" toLane="1"/>
+  <delete from="32237371" to="142506452#10" fromLane="2" toLane="0"/>
+  <delete from="142506452#8" to="32237446#2" fromLane="0" toLane="2"/>
+  <delete from="142506452#8" to="32237446#2" fromLane="0" toLane="1"/>
+  <delete from="142506452#8" to="32237446#2" fromLane="0" toLane="0"/>
+  <delete from="-142506452#10" to="32121244#2" fromLane="0" toLane="0"/>
+  <delete from="-142506452#10" to="32121244#2" fromLane="0" toLane="1"/>
+  <delete from="-142506452#10" to="32121244#2" fromLane="0" toLane="2"/>
+  <delete from="-1601#1" to="32237446#2" fromLane="1" toLane="0"/>
+  <delete from="-1601#1" to="32237446#2" fromLane="1" toLane="1"/>
+  <delete from="-1601#1" to="32237446#2" fromLane="1" toLane="2"/>
+  <connection from="-1601#1" to="32121007" fromLane="0" toLane="0"/> 
+  <delete from="32121227" to="32121244#2" fromLane="1" toLane="2"/>
+  <delete from="32121227" to="32121244#2" fromLane="1" toLane="1"/>
+  <delete from="32121227" to="32121244#2" fromLane="1" toLane="0"/>
+  <delete from="-1601#1" to="32121244#2" fromLane="1" toLane="2"/>
+  <delete from="32121227" to="32237446#2" fromLane="1" toLane="1"/>
+  <delete from="32237371" to="32237446#2" fromLane="2" toLane="0"/>
+  <delete from="32237371" to="32121012#2" fromLane="2" toLane="1"/> 
+  <delete from="32121227" to="32121007" fromLane="1" toLane="1"/>
+  <delete from="-1601#1" to="32121244#2" fromLane="1" toLane="1"/>
+  <delete from="32121012#0" to="32237446#2" fromLane="1" toLane="1"/>
+  <delete from="32121012#0" to="32237446#2" fromLane="1" toLane="2"/>
+  <delete from="32237371" to="32237446#2" fromLane="2" toLane="1"/>-->
+  
+</connections>
