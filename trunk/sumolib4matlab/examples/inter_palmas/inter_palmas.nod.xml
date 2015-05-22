@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 04/29/15 16:35:56 by SUMO netconvert Version dev-SVN-r16802
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="inter_palmas.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="inter_palmas"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<nodes version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/nodes_file.xsd">
+    <location netOffset="-436954.42,-689250.27" convBoundary="0.00,0.00,197.87,267.77" origBoundary="-75.569917,6.235311,-75.568126,6.237731" projParameter="+proj=utm +zone=18 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <node id="3218348564" x="85.76" y="163.64" type="traffic_light" tl="3218348564"/>
+    <node id="339059941" x="0.00" y="185.42" type="unregulated"/>
+    <node id="339059944" x="10.10" y="218.08" type="unregulated"/>
+    <node id="339060251" x="168.33" y="55.49" type="priority"/>
+    <node id="339060265" x="49.23" y="253.90" type="unregulated"/>
+    <node id="339061350" x="81.24" y="152.93" type="traffic_light" tl="339061350"/>
+    <node id="339061351" x="57.78" y="167.43" type="priority"/>
+    <node id="339061412" x="186.47" y="0.01" type="unregulated"/>
+    <node id="339061690" x="197.87" y="0.00" type="unregulated"/>
+    <node id="339061699" x="46.90" y="183.94" type="priority"/>
+    <node id="339062566" x="54.78" y="267.77" type="unregulated"/>
+    <node id="339062833" x="60.28" y="83.15" type="unregulated"/>
+</nodes>
