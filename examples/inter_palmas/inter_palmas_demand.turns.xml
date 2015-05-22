@@ -1,0 +1,17 @@
+<turns>
+	<interval begin="50400" end="54000">
+		<fromEdge id="30659375">
+			<toEdge id="-609#2" probability="1"/>
+		</fromEdge>
+		<fromEdge id="30659170">
+			<toEdge id="33463249#3" probability="1"/>
+		</fromEdge>
+		<fromEdge id="33463249#0">
+			<toEdge id="30659403" probability="2.000000e-01"/>
+			<toEdge id="33463249#1" probability="8.000000e-01"/>
+		</fromEdge>
+		<fromEdge id="-609#0">
+			<toEdge id="-609#1" probability="1"/>
+		</fromEdge>
+	</interval>
+</turns>
