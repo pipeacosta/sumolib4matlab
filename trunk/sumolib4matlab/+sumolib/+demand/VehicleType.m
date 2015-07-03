@@ -24,9 +24,20 @@ classdef VehicleType
         loadingDuration
     end
     methods
-		function this = VehicleType(varargin)
+        function this = VehicleType(varargin)
+            %sumolib.demand.VehicleType constructs a VehicleType object.
+            %   myType = sumolib.demand.VehicleType(ID) creates an object
+            %   myType identified by the string ID, that is an instance of
+            %   the sumolib.demand.VehicleType class.
+            %   Further properties can be defined as name-value pairs.
+            %   These properties can be found at:
+            %   http://sumo.dlr.de/wiki/Specification#Types
             
-            vClasses = {'ignoring','private','eergency','authority',...
+            %   Copyright 2015 Universidad Nacional de Colombia,
+            %   Politecnico Jaime Isaza Cadavid.
+            %   $Id$
+            
+            vClasses = {'ignoring','private','emergency','authority',...
                 'army','vip','passenger','hov','taxi','bus','coach',...
                 'delivery','truck','trailer','tram','rail_urban',...
                 'rail','rail_electric','motorcycle','moped','bycicle',...

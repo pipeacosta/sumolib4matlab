@@ -8,6 +8,21 @@ classdef TurnProbability
     end
 	methods
 		function this = TurnProbability(varargin)
+            %sumolib.demand.TurnProbability constructs a TurnProbability
+            %object.
+            %   myTurnProbability = sumolib.demand.TurnProbability(FROMEDGE,...
+            %   TOEDGES,PROBABILITIES) creates an object myTurnProbability
+            %   where FROMEDGE is the ID of the SUMO edge of interest,
+            %   TOEDGES is a cell array containing the IDs of edges
+            %   connected to FROMEDGE and PROBABILITIES is an array of the
+            %   same length than TOEDGES that specifies the turning
+            %   probabilities with an origin given by FROMEDGE and
+            %   destinations given by FROMEDGES.
+            
+            %   Copyright 2015 Universidad Nacional de Colombia,
+            %   Politecnico Jaime Isaza Cadavid.
+            %   $Id$
+            
 			p = inputParser;
 			p.FunctionName = 'sumolib.demand.TurnProbability';
 % 			p.addRequired('beginTime', @isnumeric);
