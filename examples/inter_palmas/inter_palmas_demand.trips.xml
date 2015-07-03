@@ -1,9 +1,0 @@
-<flows>
-	<vType id="taxi"/>
-	<vType id="carro" color="1,0,0" guiShape="passenger"/>
-	<vType id="bus" color="0,1,0" guiShape="bus"/>
-	<flow id="306593751" begin="50400" end="54000" type="taxi" from="30659375" vehsPerHour="200"/>
-	<flow id="306591701" begin="50400" end="54000" type="carro" from="30659170" vehsPerHour="200"/>
-	<flow id="33463249#01" begin="50400" end="54000" type="bus" from="33463249#0" vehsPerHour="500"/>
-	<flow id="-609#01" begin="50400" end="54000" type="taxi" from="-609#0" vehsPerHour="500"/>
-</flows>

@@ -19,9 +19,31 @@ classdef Flow
         line
         personNumber
         containerNumber
+        stop
     end
 	methods
 		function this = Flow(varargin)
+            %sumolib.demand.Flow constructs a Flow object.
+            %   myFlow = sumolib.demand.Flow(FROM) creates an object
+            %   myFlow representing a flow of vehicles with an origin given
+            %   by the FROM string, which is the ID of the origin edge. The
+            %   related number of vehicles is generated when the
+            %   generateDemand function is executed specifying this flow,
+            %   using the SUMO defaults.
+            %   myFlow = sumolib.demand.Flow(...,DEMANTYPE,DEMAND)
+            %   Specifies the type of demand as a string and the demand as
+            %   a numeric array. The available demand types are
+            %   vehsPerHour, period and probability with corresponding
+            %   demands given in vehicles per hour, seconds and a
+            %   probability between 0 and 1. Note that you must define both
+            %   DEMANDTYPE and DEMAND.
+            %   Further properties can be defined as name-value pairs.
+            %   These properties can be found at:
+            %   http://sumo.dlr.de/wiki/Demand/Shortest_or_Optimal_Path_Routing#Flow_Definitions
+            
+            %   Copyright 2015 Universidad Nacional de Colombia,
+            %   Politecnico Jaime Isaza Cadavid.
+            %   $Id$
             
             demandTypes = {'vehsPerHour', 'period', 'probability'};
             departLaneTypes = {'random','free','departLane'};
@@ -31,25 +53,26 @@ classdef Flow
             arrivalPosTypes = {'random','max'};
             arrivalSpeedTypes = {'current'};
             
-			p = inputParser;
-			p.FunctionName = 'sumolib.demand.Flow';
-			p.addRequired('from', @ischar);
-% 			p.addRequired('beginTime', @isnumeric);
-% 			p.addOptional('endTime', [], @isnumeric)
-			p.addOptional('type', [], @(x) isa(x,'sumolib.demand.VehicleType'))
-            p.addOptional('to', [], @ischar)
-            p.addOptional('via', [], @ischar)
+            p = inputParser;
+            p.FunctionName = 'sumolib.demand.Flow';
+            p.addRequired('from', @ischar);
+            % 	p.addRequired('beginTime', @isnumeric);
+            % 	p.addOptional('endTime', [], @isnumeric)
             p.addOptional('demandType', [], @(x) any(validatestring(x,demandTypes)))
             p.addOptional('demand', [], @isnumeric)
-			p.addOptional('number', [], @isnumeric)
-			p.addOptional('color', [], @(x) length(x)<=4 && all(x)>=0 && all(x)<=255)
-			p.addOptional('departLane', [], @(x) isinteger(x) || any(validatestring(x,departLaneTypes)))
-			p.addOptional('departPos', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,departPosTypes)))
-			p.addOptional('departSpeed', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,departSpeedTypes)))
-			p.addOptional('arrivalLane', [], @(x) isnumeric(x) || any(validatestring(x,arrivalLaneTypes)))
-			p.addOptional('arrivalPos', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,arrivalPosTypes)))
-			p.addOptional('arrivalSpeed', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,arrivalSpeedTypes)))
-			p.parse(varargin{:})
+            p.addOptional('type', [], @(x) isa(x,'sumolib.demand.VehicleType'))
+            p.addOptional('to', '', @ischar)
+            p.addOptional('via', [], @ischar)
+            p.addOptional('number', [], @isnumeric)
+            p.addOptional('color', [], @(x) length(x)<=4 && all(x)>=0 && all(x)<=255)
+            p.addOptional('departLane', [], @(x) isnumeric(x) || any(validatestring(x,departLaneTypes)))
+            p.addOptional('departPos', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,departPosTypes)))
+            p.addOptional('departSpeed', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,departSpeedTypes)))
+            p.addOptional('arrivalLane', [], @(x) isnumeric(x) || any(validatestring(x,arrivalLaneTypes)))
+            p.addOptional('arrivalPos', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,arrivalPosTypes)))
+            p.addOptional('arrivalSpeed', [], @(x) isnumeric(x) && x>=0 || any(validatestring(x,arrivalSpeedTypes)))
+            p.addOptional('stop', {}, @iscell)
+            p.parse(varargin{:})
             
             if xor(isempty(p.Results.demandType),isempty(p.Results.demand))
                 throw(MException('Flow:demandError',...
@@ -79,6 +102,7 @@ classdef Flow
 			this.arrivalLane = p.Results.arrivalLane;
 			this.arrivalPos = p.Results.arrivalPos;
 			this.arrivalSpeed = p.Results.arrivalSpeed;
+            this.stop = p.Results.stop;
 			
 		end
 	end
